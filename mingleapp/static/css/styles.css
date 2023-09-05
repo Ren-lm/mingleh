@@ -1,0 +1,455 @@
+.reg-textheader{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    position:absolute;
+    top: -4%;
+}
+.banner {
+    background-color: #272829;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.btn{
+    background-color:  rgb(117, 34, 140);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    position: absolute;
+    right: 45%;
+}
+
+
+.btn:hover{
+    background-color: rgb(211, 121, 211);
+    border: 1px solid purple;
+    border-width: 2px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn:active {
+    background-color: #f1c8fe; 
+}
+
+.index-regbtn{
+        background-color:  rgb(117, 34, 140);
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        align-items: center;
+        position: absolute;
+        right: 43.5%;
+        top: 58%;
+        width: 150px;
+
+}
+
+.index-logbtn{
+    background-color:  rgb(117, 34, 140);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    position: absolute;
+    right: 43.5%;
+    top: 64%;
+    width: 150px;
+}
+
+
+.log-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20%; 
+    width:100%;
+  
+}
+.reg-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 20%; 
+    width:100%;
+
+}
+
+
+
+.input-field {
+    width: 500px;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid purple;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.banner {
+    background-color: rgb(117, 34, 140);
+
+    color: #fff;
+}
+
+
+/* profile.html styles */
+
+.profile-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 2px solid #F0D9FF;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #F3F1F5;
+}
+
+.profile-image-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #F0D9FF;
+    padding-right: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #7F7C82;
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7F7C82;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-button {
+    display: inline-block;
+    background-color: #BFA2DB;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+/* .home-button {
+    display: inline-block;
+    background-color: #BFA2DB; 
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px; 
+    text-decoration: none;
+} */
+
+
+.edit-button:hover {
+    background-color: #7F7C82;
+}
+
+.user-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-box, .section-box-friends {
+    background-color: #F3F1F5;
+    padding: 20px;
+    border: 2px solid #F0D9FF;
+    border-radius: 10px;
+}
+
+.section-box h3, .section-box-friends h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7F7C82;
+    border-bottom: 2px solid #F0D9FF;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.section-box-friends {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.posts {
+    flex: 2;
+    padding: 20px;
+    border: 2px solid #F0D9FF;
+    border-radius: 10px;
+    background-color: #F3F1F5;
+}
+
+.posts h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7F7C82;
+    border-bottom: 2px solid #F0D9FF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* profile.html styles ends */
+
+
+
+.post {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.user-info {
+   
+    display: flex;
+    flex-direction: column;
+    padding-top:280px;
+    max-width: 50%; 
+
+}
+
+
+
+ .col-6 {
+   margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.234);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+    height: 650px;
+    border-radius: 10px;
+    overflow: auto;
+}
+.col-3{
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.234);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+    height: 600px;
+    border-radius: 10px;
+    width: 250px;
+    overflow: auto;
+
+}
+
+
+input[type=submit], button {
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: #0056b3;
+}
+
+h2, h3 {
+    font-family: 'Arial', sans-serif;
+    margin-top: 0;
+}
+
+
+
+form {
+    margin-bottom: 20px;
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+
+.user-profile {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.profile-pic {
+    width: 100px;  
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.profile-link {
+    display: block; 
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #7F7C82;
+    position: absolute;
+    top: 300px;
+
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}  
+
+/* update_profile.html styles */
+
+/* Style the container for form */
+.uprofile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border: 2px solid #F0D9FF;
+    padding: 20px;
+    background-color: #F3F1F5;
+    border-radius: 10px;
+}
+
+/* Style each form field */
+.uprofile form p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style the form labels */
+.uprofile form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #7F7C82;
+}
+
+/* Style the form input fields and textareas */
+.uprofile form input[type="text"], 
+.uprofile form input[type="email"], 
+.uprofile form input[type="password"], 
+.uprofile form textarea, 
+.uprofile form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F0D9FF;
+    border-radius: 5px;
+    background-color: #F3F1F5;
+    color: #7F7C82;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.uprofile form input[type="text"]:focus, 
+.uprofile form input[type="email"]:focus, 
+.uprofile form input[type="password"]:focus, 
+.uprofile form textarea:focus, 
+.uprofile form select:focus {
+    border-color: #BFA2DB;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    align-self: center;
+    background-color: #BFA2DB;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #7F7C82;
+}
+
+/* update_profile.html styles ends */
+
+.postfeed-pic {
+    border-radius: 50%;  
+    margin-right: 10px;  
+    vertical-align: middle;   
+    width: 50px;  
+    height: 50px;  
+}
