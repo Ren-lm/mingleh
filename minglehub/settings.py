@@ -148,13 +148,7 @@ LOGIN_REDIRECT_URL = '/home/'  # redirects user to their homepage after login
 LOGGING = {
     'version': 1,
     'handlers': {
-        'cloudwatch': {
-            'class': 'watchtower.CloudWatchLogHandler',
-            'boto3_session': boto3.Session(region_name='us-west-2'),
-            'log_group': 'DjangoAppLogs',
-            'stream_name': 'DjangoAppStream',
-            'level': 'DEBUG',
-        },
+    
     },
     'loggers': {
         'django': {
