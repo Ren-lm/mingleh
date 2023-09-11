@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+  <div class="banner" onclick="window.location.href='/home'">
+    <h1>MingleHub</h1>
+
+  </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="/home" class="btn-icon"> 
+             <i class="fas fa-home"></i>
+            <b> Home </b> 
+          </a>
+        </div>
+      </div>
+  <div class="profile-section">
+    <div class="profile-image-container">
+      {% if user.profile_picture %}
+      <img src="{{ user.profile_picture.url }}" alt="Profile picture" class="profile-image">
+      {% endif %}
+      <h2 class="profile-name">{{ user.first_name }} {{ user.last_name }}</h2>
+      {% if request_user.id == user.id %}
+        <a href="{% url 'update_profile' user.id %}" class="edit-button">Edit Profile</a>
+      {% endif %}
+        <br>
+        <div class="card">
+        <div class="card-header">Friends</div>
+        <div class="card-body">
+          {% for friend in friends %}
+          <p> 
+            <a href="/profile/{{friend.id}}" class="friend-link">
+                <i class="fas fa-user-friends"></i> {{ friend.first_name }} {{ friend.last_name }}
+            </a> 
+        </p>
+          {% endfor %}
+        </div>
+      </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col col-8">
+            <button class="" onclick="window.location.href='/logout'"> Logout </button>
+          </div>
+        </div>
+    </div>
+
+
+ 
+
+
+
+    <div class="user-info">
+      <div class="section-box">
+        <h3><i class="fas fa-info-circle"></i> Bio</h3>
+        <p>{{ user.bio }}</p>
+      </div>
+      <div class="section-box">
+        <h3><i class="fas fa-heart"></i> Hobbies & Interests</h3>
+        <p>{{ user.hobbies }}</p>
+      </div>
+     
+      <div class="section-box">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <p>{{ user.education }}</p>
+      </div>
+      <div class="section-box">
+        <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+        <p>{{ user.location }}</p>
+      </div>
+      
+    </div>
+
+
+    <div class="posts">
+      <h3><i class="fas fa-edit"></i>User Posts</h3>
+      {% for post in posts %}
+        <div class="post">
+            <!-- Display user's profile photo and details on the same line -->
+            <span>
+                <img src="{{ post.author.profile_picture.url }}" alt="{{ post.author.first_name }} {{ post.author.last_name }}" class="postfeed-pic">
+                <strong>{{ post.author.first_name }} {{ post.author.last_name }}</strong>
+                <small>{{ post.timestamp|date:"F j, Y, g:i a" }}</small>
+            </span>
+
+            <!-- Display post content -->
+            <p style="clear:both;">{{ post.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+
+  </div>
+</div>
+{% endblock %}
+
